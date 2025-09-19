@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+         colors="true"
+         stopOnFailure="false"
+         verbose="false">
+    <testsuites>
+        <testsuite name="App Integration Tests">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <!-- default environment variables, you can override with CLI or env -->
+    <php>
+        <env name="BASE_URL" value="http://localhost" />
+        <!-- If you use built-in PHP server on port 8000: http://localhost:8000 -->
+    </php>
+</phpunit>
