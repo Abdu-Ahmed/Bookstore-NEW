@@ -10,7 +10,7 @@ require_once __DIR__ . '/env.php';
  */
 return [
     'app' => [
-        'name' => env('APP_NAME', 'Your App Name'),
+        'name' => env('APP_NAME', 'Bookstore'),
         'debug' => env('APP_DEBUG', 'true') === 'true', // Convert string to boolean
         'base_path' => env('BASE_PATH', 'http://localhost'), 
         'base_url' => env('BASE_URL', 'http://localhost'), // Used for JWT issuer
@@ -45,4 +45,5 @@ return [
     ],
     
     'views_path' => APP_ROOT . '/app/Views',
+
 ];
