@@ -78,14 +78,16 @@ $buildUrl = static function (array $overrides = []) use ($escape, $base) : strin
     <div class="container p-5">
         <div class="row">
             <!-- Sidebar / Filters -->
-            <aside class="col-md-3">
+            <aside class="col-md-3 border-end">
                 <div class="sidebar">
                     <div class="widget-search-bar mb-4">
                         <form method="GET" action="<?= $escape(rtrim($base, '/') . '/books') ?>">
                             <div class="input-group">
                                 <input name="search" class="form-control" type="search" placeholder="Search"
                                        value="<?= $escape($keyword) ?>">
-                                <button type="submit" class="btn btn-dark">Search</button>
+                                                                    <button type="submit" class="btn btn-link p-0 border-0" aria-label="Search">
+                                        <i class="fas fa-search" aria-hidden="true"></i>
+                                    </button>
                             </div>
                         </form>
                     </div>
@@ -175,7 +177,7 @@ $buildUrl = static function (array $overrides = []) use ($escape, $base) : strin
                                             <?php if ($isLoggedIn): ?>
                                                 <form action="<?= $escape(rtrim($base, '/') . '/cart/add/' . (string)$id) ?>" method="POST" class="d-inline">
                                                     <input type="hidden" name="quantity" value="1">
-                                                    <button type="submit" class="btn btn-dark btn-sm">Add to cart</button>
+                                                    <button type="submit" class="btn">Add to cart</button>
                                                 </form>
                                             <?php else: ?>
                                                 <a href="<?= $escape(rtrim($base, '/') . '/login') ?>" class="btn btn-dark btn-sm">Log in to buy</a>
