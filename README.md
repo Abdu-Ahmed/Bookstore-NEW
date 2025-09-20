@@ -16,6 +16,10 @@ A minimal, extendable bookstore application built with plain PHP featuring a cle
 - [Testing](#testing)
 - [Database Migrations](#database-migrations)
 
+TESTING ACCOUNT:
+USERNAME: abdu-admin
+PASSWORD: Abdulrahman.test123
+
 
 ## Frontend
 
