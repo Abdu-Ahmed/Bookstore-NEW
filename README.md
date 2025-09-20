@@ -6,6 +6,7 @@ A minimal, extendable bookstore application built with plain PHP featuring a cle
 
 ## Table of Contents
 
+- [Frontend](#frontend)
 - [Technology Stack](#technology-stack)
 - [Project Overview](#project-overview)
 - [Architecture](#architecture)
@@ -14,6 +15,13 @@ A minimal, extendable bookstore application built with plain PHP featuring a cle
 - [Cart & Checkout System](#cart--checkout-system)
 - [Testing](#testing)
 - [Database Migrations](#database-migrations)
+
+
+## Frontend
+
+For the frontend i chose to implement it using views templates and mixture of CSS and Bootstrap and some Javascript magic to enhance the UX!
+
+Completely intutive and simplisitic take on a modern E-Comm Website using CSS and Bootstrap, Custom made by yours truly!
 
 ## Technology Stack
 
